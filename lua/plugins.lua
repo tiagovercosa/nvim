@@ -36,7 +36,6 @@ packer.init {
   },
 }
 
-
 -- Instalar seus plugins aqui
 return packer.startup(function(use)
   use "wbthomason/packer.nvim"              -- Have packer manage itself
@@ -60,6 +59,15 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-emoji"
   use "hrsh7th/cmp-nvim-lua"
+
+  -- git
+  use {
+    'lewis6991/gitsigns.nvim',
+    requires = {
+      'nvim-lua/plenary.nvim'
+    },
+    -- tag = 'release' -- To use the latest release
+  }
 
   -- snippets
   use "L3MON4D3/LuaSnip"             --snippet engine
