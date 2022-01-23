@@ -5,10 +5,10 @@ local term_opts = { silent = true }
 local keymap = vim.api.nvim_set_keymap
 
 -- Remapeando vírgura como tecla líder
-keymap( "", "<Space>", "<Nop>", opts )
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
- 
+--keymap( "", "<Space>", "<Nop>", opts )
+vim.g.mapleader = ","
+vim.g.maplocalleader = ","
+
 -- Modes
 --   normal_mode = "n",
 --   insert_mode = "i",
@@ -48,3 +48,8 @@ keymap("n", "<F2>", ":e .<cr>", opts)
 -- KeyBinding  for nvim-tree
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 keymap("n", "<leader>r", ":NvimTreeRefresh<CR>", opts)
+
+--KeyBinding for VimTex
+keymap("n", "<leader>l", ":VimtexCompile<CR>", opts)
+keymap("n", "<leader>c", ":VimtexClean<CR>", opts)
+keymap("n", "<leader>k", ":VimtexStop<CR>", opts)
