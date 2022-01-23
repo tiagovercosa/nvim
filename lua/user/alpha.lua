@@ -14,6 +14,9 @@ dashboard.section.header.val = {
 }
 dashboard.section.buttons.val = {
 	dashboard.button("e", "  New file", ":ene <BAR> startinsert <CR>"),
+	dashboard.button("w", "磌 Wiki Index", ":VimwikiIndex <CR>"),
+	dashboard.button("d", "  Diary Index", ":VimwikiDiaryIndex <CR>"),
+	dashboard.button("n", "  Diary Note", ":VimwikiMakeDiaryNote <CR>"),
 	dashboard.button("c", "  Config Folder", ":e ~/.config/nvim/. <CR>"),
 	dashboard.button("q", "  Quit", ":qa<CR>"),
 }

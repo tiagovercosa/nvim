@@ -48,6 +48,11 @@ return packer.startup(function(use)
       'goolord/alpha-nvim',
       requires = { 'kyazdani42/nvim-web-devicons' }
   }
+  use 'lervag/vimtex'
+  use {
+    'esensar/vimwiki-reviews-lua',
+    requires = { 'vimwiki/vimwiki', 'nvim-lua/plenary.nvim' }
+  }
 
   -- Colorscheme
   use "lunarvim/darkplus.nvim"
