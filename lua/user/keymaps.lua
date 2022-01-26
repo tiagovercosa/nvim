@@ -53,3 +53,6 @@ keymap("n", "<leader>r", ":NvimTreeRefresh<CR>", opts)
 keymap("n", "<leader>l", ":VimtexCompile<CR>", opts)
 keymap("n", "<leader>c", ":VimtexClean<CR>", opts)
 keymap("n", "<leader>k", ":VimtexStop<CR>", opts)
+
+-- Goyo
+keymap("n", "<leader>g", ":Goyo<CR>", opts)
