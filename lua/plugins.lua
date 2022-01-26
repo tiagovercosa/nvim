@@ -53,6 +53,7 @@ return packer.startup(function(use)
     'esensar/vimwiki-reviews-lua',
     requires = { 'vimwiki/vimwiki', 'nvim-lua/plenary.nvim' }
   }
+  use 'junegunn/goyo.vim'
 
   -- Colorscheme
   use "lunarvim/darkplus.nvim"
