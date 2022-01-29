@@ -49,16 +49,17 @@ return packer.startup(function(use)
       requires = { 'kyazdani42/nvim-web-devicons' }
   }
   use 'lervag/vimtex'
-  use {
-    'esensar/vimwiki-reviews-lua',
-    requires = { 'vimwiki/vimwiki', 'nvim-lua/plenary.nvim' }
-  }
+--  use {
+--    'esensar/vimwiki-reviews-lua',
+--    requires = { 'vimwiki/vimwiki', 'nvim-lua/plenary.nvim' }
+--  }
   use 'junegunn/goyo.vim'
 
   -- Colorscheme
   use "lunarvim/darkplus.nvim"
   use "folke/tokyonight.nvim"
   use "rebelot/kanagawa.nvim"
+  use "arcticicestudio/nord-vim"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
