@@ -44,15 +44,7 @@ return packer.startup(function(use)
   use "windwp/nvim-autopairs"               -- Autopairs, integrates with both cmp and treesitter
   use "kyazdani42/nvim-web-devicons"
   use "kyazdani42/nvim-tree.lua"
-  use {
-      'goolord/alpha-nvim',
-      requires = { 'kyazdani42/nvim-web-devicons' }
-  }
   use 'lervag/vimtex'
---  use {
---    'esensar/vimwiki-reviews-lua',
---    requires = { 'vimwiki/vimwiki', 'nvim-lua/plenary.nvim' }
---  }
   use 'junegunn/goyo.vim'
 
   -- Colorscheme

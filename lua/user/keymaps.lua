@@ -44,6 +44,7 @@ keymap("n", "<C-o>", ":!opout % <cr><cr>", opts)
 
 keymap("n", "<F1>", ":e ~/doc/notes/<cr>", opts)
 keymap("n", "<F2>", ":e .<cr>", opts)
+keymap("n", "<F3>", ":e ~/.config/nvim/<cr>", opts)
 
 -- KeyBinding  for nvim-tree
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
