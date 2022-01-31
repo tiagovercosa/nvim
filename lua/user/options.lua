@@ -50,15 +50,14 @@ local options = {
   completeopt = { "menuone", "noselect" }, -- mostly just for cmp
   sidescrolloff = 8,                    -- ???
   compatible = false,
-  filetype = "on",
-  filetype = "indent",
-  filetype = "plugin",
 }
 
 for k, v in pairs(options) do
 	vim.opt[k] = v
 end
 
+vim.cmd "filetype on"
+vim.cmd "filetype plugin on"
 vim.cmd "set t_Co=256"                  -- Support 256 colors
 vim.cmd "set iskeyword+=-"              -- Treat dash separated words as a word text object
 vim.cmd "set formatoptions-=cro"        -- Stop newline continuation of comments
