@@ -7,32 +7,32 @@
 --]]
 
 -- Default options:
-require('kanagawa').setup({
-    undercurl = true,           -- enable undercurls
-    commentStyle = "italic",
-    functionStyle = "NONE",
-    keywordStyle = "italic",
-    statementStyle = "bold",
-    typeStyle = "NONE",
-    variablebuiltinStyle = "italic",
-    specialReturn = true,       -- special highlight for the return keyword
-    specialException = true,    -- special highlight for exception handling keywords
-    transparent = false,        -- do not set background color
-    dimInactive = false,        -- dim inactive window `:h hl-NormalNC`
-    colors = {},
-    overrides = {},
-})
-
--- setup must be called before loading
-vim.cmd("colorscheme kanagawa")
+-- require('kanagawa').setup({
+--    undercurl = true,           -- enable undercurls
+--   commentStyle = "italic",
+--    functionStyle = "NONE",
+--    keywordStyle = "italic",
+--    statementStyle = "bold",
+--    typeStyle = "NONE",
+--    variablebuiltinStyle = "italic",
+--    specialReturn = true,       -- special highlight for the return keyword
+--    specialException = true,    -- special highlight for exception handling keywords
+--    transparent = false,        -- do not set background color
+--    dimInactive = false,        -- dim inactive window `:h hl-NormalNC`
+--    colors = {},
+--    overrides = {},
+--})
 
 -- Example config in Lua
---vim.g.tokyonight_style = "night"
---vim.g.tokyonight_italic_functions = true
---vim.g.tokyonight_sidebars = { "qf", "vista_kind", "terminal", "packer" }
+vim.g.tokyonight_style = "night"
+vim.g.tokyonight_italic_functions = true
+vim.g.tokyonight_sidebars = { "qf", "vista_kind", "terminal", "packer" }
 
 -- Change the "hint" color to the "orange" color, and make the "error" color bright red
---vim.g.tokyonight_colors = { hint = "orange", error = "#ff0000" }
+vim.g.tokyonight_colors = { hint = "orange", error = "#ff0000" }
+-- setup must be called before loading
+vim.cmd("colorscheme tokyonight")
+
 
 -- Configuration for nord colorscheme
 -- vim.g.nord_cursor_line_number_background = 1
