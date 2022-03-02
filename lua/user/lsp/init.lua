@@ -8,4 +8,4 @@ require "user.lsp.lsp-installer"
 require("user.lsp.handlers").setup()
 require "user.lsp.null-ls"
 
-require'lspconfig'.r_language_server.setup{}
+require"lspconfig".r_language_server.setup{}
